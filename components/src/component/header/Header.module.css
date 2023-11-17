@@ -1,0 +1,85 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #1b1b1b;
+}
+.headerContainer {
+  max-width: 1400px;
+  margin: 0px auto;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+.headerLogo {
+  position: relative;
+  z-index: 5;
+}
+.headerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuIcon {
+}
+.menuBody {
+}
+
+.menuList li {
+  position: relative;
+  margin: 0 0 0 20px;
+}
+.menuLink a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5px;
+  color: #fff;
+}
+.menuLink a:hover {
+  text-decoration: underline;
+}
+
+.headerAuth {
+  padding-left: 170px;
+}
+.menuSubList {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.menuSubLink li {
+}
+.menuButton button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  color: black;
+}
+
+@media (min-width: 767px) {
+  .menuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+    list-style-type: none;
+  }
+  .menuList > li {
+    padding: 10px 0;
+  }
+  .menuSubList {
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+}

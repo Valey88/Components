@@ -26,3 +26,9 @@ const isMobile = {
         )
     }
 }
+
+if (isMobile.any()) {
+    document.body.classList.add ('toch');
+} else{
+    document.body.classList.add ('PC');
+}
